@@ -1,3 +1,4 @@
+[![Run on Repl.it](https://repl.it/badge/github/rishab05/Torrent-Finder)](https://repl.it/github/rishab05/Torrent-Finder)
 # Torrent-Finder
 A CLI agent for searching torrent and finding mangnet links. It can copy that magnet link to your clipboard for making your work more easy.
 
