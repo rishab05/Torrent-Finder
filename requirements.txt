@@ -1,7 +1,5 @@
-BeautifulSoup or bs4
+beautifulsoup4
 pyperclip
 requests
 re
 
-Only for Linux (pyperclip will not copy magnet link without them)
-xclip or pyQt5
