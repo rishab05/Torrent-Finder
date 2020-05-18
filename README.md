@@ -11,7 +11,8 @@ To run this repository clone or download using above link.
  * BeautifulSoup or bs4
  * pyperclip
  * requests
- *re
+ * re
+ 
 For linux users
  * xclip or pyQt5
 
