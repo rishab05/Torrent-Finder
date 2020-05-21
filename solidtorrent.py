@@ -23,6 +23,8 @@ def solidtorrent_search(query):
     result=soup.find_all('h3',class_='subtitle-2 text-truncate') #name of all torrents (20)
 
     size=soup.find_all('strong') #find size of torrent
+    seeders=soup.find_all('span',class_="green--text darken-4 font-weight-bold")
+    leechers=soup.find_all("span",class_="red--text darken-4 font-weight-bold")
 
     magnet=soup.find_all('a') #for find href links
 
@@ -30,7 +32,7 @@ def solidtorrent_search(query):
 
     i=1
     for r,s in zip(result,size) :
-        print(i,r.text," size=",s.text)
+        print(i,r.text+"\nsize="+s.text+" | seeders="+sd.text.rstrip()+"| leechers="+l.text.replace("\n",""))
         i+=1
 
     for link in magnet:
