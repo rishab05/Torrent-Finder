@@ -36,13 +36,14 @@ def search_result(soup,results,size):
 
     for r,s in zip(results,size):   #print serach result upto 15 torrents
 
-        print(i,re.sub('[\W_]+', ' ', r.text[:49]),s.text.replace("B","B,seedrs-"))
+        print(i,re.sub('[\W_]+', ' ', r.text[:49]),s.text.replace("B","B, seedrs-"))
+        print()
         i=i+1
 
 
     for link in soup.find_all('a'):
                                         #getting link for all 15 torrents
-        b=link.get('href')
+        b=link.get('href')print(i,r.text+"\nsize="+s.text+" | seeders="+sd.text.rstrip()+"| leechers="+l.text.replace("\n",""))
         if re.match("^/torrent",b):
             links.append("https://1337x.to"+b)
 
